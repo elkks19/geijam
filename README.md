@@ -1,20 +1,4 @@
-
-<style>
-h1 {
-    text-align: center;
-    color: #4CAF50;
-    font-family: Arial, sans-serif;
-    font-size: 2.5em;
-    margin-top: 20px;
-}
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-</style>
-
-<main>
+<main align="center">
     <h1>
         EL REPOSITORIO DEL JUEGO HECHO PARA LA GEI JAM 2025 UNIFRANZ
     </h1>
