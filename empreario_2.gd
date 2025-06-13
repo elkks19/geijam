@@ -17,6 +17,7 @@ var coyote_time_counter := 0.0
 var jump_buffer_counter := 0.0
 var is_wall_sliding := false
 var last_wall_normal := Vector2.ZERO
+var dolares = 0
 
 # Obtener gravedad del proyecto
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
@@ -100,3 +101,6 @@ func update_animation() -> void:
 
 func die():
 	get_tree().call_deferred("reload_current_scene")
+
+func tomar_dolar():
+	dolares += 1

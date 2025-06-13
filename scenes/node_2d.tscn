@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://dslmvhnwewjdy"]
+[gd_scene load_steps=18 format=3 uid="uid://dslmvhnwewjdy"]
 
 [ext_resource type="Texture2D" uid="uid://dy3n7nici34kj" path="res://assets/sprites/pirate bomb pack/8-Tile-Sets/Tile-Sets (64-64).png" id="1_4dvvg"]
 [ext_resource type="PackedScene" uid="uid://n1pagtnosixu" path="res://scenes/parallax.tscn" id="2_4dvvg"]
@@ -14,6 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://bo4ab0k53g88s" path="res://scenes/cholo.tscn" id="12_f6ptj"]
 [ext_resource type="Script" uid="uid://rgmq56jj1waq" path="res://scripts/cholo.gd" id="13_hsdmi"]
 [ext_resource type="PackedScene" uid="uid://cdh1tbbkm450i" path="res://scenes/empreario2.tscn" id="15_3kg8w"]
+[ext_resource type="PackedScene" uid="uid://bwi83bix0o7jo" path="res://scenes/dolars.tscn" id="15_xtx0q"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kdubu"]
 texture = ExtResource("1_4dvvg")
@@ -719,3 +720,118 @@ position = Vector2(8610, 713)
 
 [node name="Key" parent="key" instance=ExtResource("5_j7wrs")]
 position = Vector2(7844, 116)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
+[node name="dolares" type="Node" parent="."]
+
+[node name="dolars" parent="dolares" instance=ExtResource("15_xtx0q")]
+position = Vector2(992, 487)
+
+[node name="dolars3" parent="dolares" instance=ExtResource("15_xtx0q")]
+position = Vector2(1872, 312)
+
+[node name="dolars4" parent="dolares" instance=ExtResource("15_xtx0q")]
+position = Vector2(2467, 480)
+
+[node name="dolars5" parent="dolares" instance=ExtResource("15_xtx0q")]
+position = Vector2(2833, 483)
+
+[node name="dolars6" parent="dolares" instance=ExtResource("15_xtx0q")]
+position = Vector2(2833, 366)
+
+[node name="dolars7" parent="dolares" instance=ExtResource("15_xtx0q")]
+position = Vector2(3129, 52)
+
+[node name="dolars8" parent="dolares" instance=ExtResource("15_xtx0q")]
+position = Vector2(3368, 566)
+
+[node name="dolars9" parent="dolares" instance=ExtResource("15_xtx0q")]
+position = Vector2(3617, 449)
+
+[node name="dolars10" parent="dolares" instance=ExtResource("15_xtx0q")]
+position = Vector2(3578, 851)
+
+[node name="dolars11" parent="dolares" instance=ExtResource("15_xtx0q")]
+position = Vector2(3635, 851)
+
+[node name="dolars12" parent="dolares" instance=ExtResource("15_xtx0q")]
+position = Vector2(3708, 851)
+
+[node name="dolars13" parent="dolares" instance=ExtResource("15_xtx0q")]
+position = Vector2(3786, 859)
+
+[node name="dolars14" parent="dolares" instance=ExtResource("15_xtx0q")]
+position = Vector2(4245, 706)
+
+[node name="dolars15" parent="dolares" instance=ExtResource("15_xtx0q")]
+position = Vector2(4463, 706)
+
+[node name="dolars16" parent="dolares" instance=ExtResource("15_xtx0q")]
+position = Vector2(4211, 281)
+
+[node name="dolars17" parent="dolares" instance=ExtResource("15_xtx0q")]
+position = Vector2(4058, 206)
+
+[node name="dolars18" parent="dolares" instance=ExtResource("15_xtx0q")]
+position = Vector2(4732, 276)
+
+[node name="dolars19" parent="dolares" instance=ExtResource("15_xtx0q")]
+position = Vector2(5051, 266)
+
+[node name="dolars20" parent="dolares" instance=ExtResource("15_xtx0q")]
+position = Vector2(5214, 274)
+
+[node name="dolars21" parent="dolares" instance=ExtResource("15_xtx0q")]
+position = Vector2(5385, 271)
+
+[node name="dolars22" parent="dolares" instance=ExtResource("15_xtx0q")]
+position = Vector2(4879, 722)
+
+[node name="dolars23" parent="dolares" instance=ExtResource("15_xtx0q")]
+position = Vector2(4978, 722)
+
+[node name="dolars24" parent="dolares" instance=ExtResource("15_xtx0q")]
+position = Vector2(5289, 725)
+
+[node name="dolars25" parent="dolares" instance=ExtResource("15_xtx0q")]
+position = Vector2(5408, 725)
+
+[node name="dolars26" parent="dolares" instance=ExtResource("15_xtx0q")]
+position = Vector2(5688, 733)
+
+[node name="dolars27" parent="dolares" instance=ExtResource("15_xtx0q")]
+position = Vector2(5691, 251)
+
+[node name="dolars28" parent="dolares" instance=ExtResource("15_xtx0q")]
+position = Vector2(6728, 573)
+
+[node name="dolars29" parent="dolares" instance=ExtResource("15_xtx0q")]
+position = Vector2(7293, 796)
+
+[node name="dolars30" parent="dolares" instance=ExtResource("15_xtx0q")]
+position = Vector2(8305, 684)
+
+[node name="dolars31" parent="dolares" instance=ExtResource("15_xtx0q")]
+position = Vector2(8393, 710)
+
+[node name="dolars32" parent="dolares" instance=ExtResource("15_xtx0q")]
+position = Vector2(9023, 723)
+
+[node name="dolars33" parent="dolares" instance=ExtResource("15_xtx0q")]
+position = Vector2(9100, 729)
+
+[node name="dolars34" parent="dolares" instance=ExtResource("15_xtx0q")]
+position = Vector2(9190, 725)
+
+[node name="dolars35" parent="dolares" instance=ExtResource("15_xtx0q")]
+position = Vector2(9299, 727)
+
+[node name="dolars36" parent="dolares" instance=ExtResource("15_xtx0q")]
+position = Vector2(9389, 727)
+
+[node name="dolars37" parent="dolares" instance=ExtResource("15_xtx0q")]
+position = Vector2(9479, 727)
+
+[node name="dolars2" parent="dolares" instance=ExtResource("15_xtx0q")]
+position = Vector2(1860, 547)

@@ -2,6 +2,7 @@ extends Area2D
 
 @export var door_path: NodePath
 
+
 var touching_player := false
 
 func _ready():
@@ -9,12 +10,12 @@ func _ready():
 	connect("body_exited", _on_body_exited)
 
 func _on_body_entered(body: Node):
-	if body.name == "player":
+	if body.name in ["player", "empresario2"]:
 		touching_player = true
 		_update_door(true)
 
 func _on_body_exited(body: Node):
-	if body.name == "player":
+	if body.name in ["player", "empresario2"]:
 		touching_player = false
 		_update_door(false)
 

@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bwi83bix0o7jo"]
 
-[ext_resource type="Texture2D" uid="uid://d2i0omgwmakj" path="res://assets/bonus/single_dollar.png" id="1_f75ta"]
 [ext_resource type="Script" uid="uid://cubceqx3k3mnh" path="res://scripts/dolars.gd" id="1_h72w6"]
+[ext_resource type="Texture2D" uid="uid://cirn2e6k3xga8" path="res://assets/sprites/bolis/bolis.jpg" id="2_h72w6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_s42h4"]
 size = Vector2(230, 100)
@@ -11,7 +11,8 @@ scale = Vector2(0.2, 0.2)
 script = ExtResource("1_h72w6")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_f75ta")
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_h72w6")
 
 [node name="Area2D" type="Area2D" parent="."]
 
