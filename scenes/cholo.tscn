@@ -858,3 +858,6 @@ animation = &"run"
 autoplay = "idle"
 frame = 5
 frame_progress = 0.94284
+
+[node name="Camera2D" type="Camera2D" parent="."]
+limit_bottom = 950

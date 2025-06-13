@@ -1,9 +1,8 @@
-[gd_scene load_steps=15 format=3 uid="uid://dslmvhnwewjdy"]
+[gd_scene load_steps=17 format=3 uid="uid://dslmvhnwewjdy"]
 
-[ext_resource type="Texture2D" uid="uid://dn4ffide30008" path="res://assets/sprites/pirate bomb pack/8-Tile-Sets/Tile-Sets (64-64).png" id="1_4dvvg"]
+[ext_resource type="Texture2D" uid="uid://dy3n7nici34kj" path="res://assets/sprites/pirate bomb pack/8-Tile-Sets/Tile-Sets (64-64).png" id="1_4dvvg"]
 [ext_resource type="PackedScene" uid="uid://n1pagtnosixu" path="res://scenes/parallax.tscn" id="2_4dvvg"]
-[ext_resource type="Texture2D" uid="uid://dmxmmtflimhbh" path="res://repositorio/Imagen de WhatsApp 2025-06-13 a las 17.37.34_08b5737d.jpg" id="2_f6ptj"]
-[ext_resource type="PackedScene" uid="uid://cpmql8cek7m0p" path="res://scenes/player.tscn" id="3_rnjyy"]
+[ext_resource type="Texture2D" uid="uid://0x4q5yl6buam" path="res://repositorio/Imagen de WhatsApp 2025-06-13 a las 17.37.34_08b5737d.jpg" id="2_f6ptj"]
 [ext_resource type="PackedScene" uid="uid://dhvgariktbj30" path="res://scenes/spike.tscn" id="4_4vge2"]
 [ext_resource type="PackedScene" uid="uid://6uc3ceqb3l4q" path="res://scenes/key.tscn" id="5_j7wrs"]
 [ext_resource type="PackedScene" uid="uid://44hijpb3kr43" path="res://scenes/wall.tscn" id="6_fws66"]
@@ -12,6 +11,9 @@
 [ext_resource type="PackedScene" uid="uid://ddwxtvtou3fbb" path="res://scenes/door.tscn" id="9_dubn7"]
 [ext_resource type="PackedScene" uid="uid://dytndsumea2cv" path="res://scenes/plataforma.tscn" id="10_dubn7"]
 [ext_resource type="PackedScene" uid="uid://cnjfg6qc8sft1" path="res://scenes/silla.tscn" id="11_08kqv"]
+[ext_resource type="PackedScene" uid="uid://bo4ab0k53g88s" path="res://scenes/cholo.tscn" id="12_f6ptj"]
+[ext_resource type="Script" uid="uid://rgmq56jj1waq" path="res://scripts/cholo.gd" id="13_hsdmi"]
+[ext_resource type="PackedScene" uid="uid://cdh1tbbkm450i" path="res://scenes/empreario2.tscn" id="15_3kg8w"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kdubu"]
 texture = ExtResource("1_4dvvg")
@@ -452,6 +454,13 @@ sources/0 = SubResource("TileSetAtlasSource_kdubu")
 
 [node name="Node2D" type="Node2D"]
 
+[node name="player" parent="." instance=ExtResource("12_f6ptj")]
+position = Vector2(297, 835)
+script = ExtResource("13_hsdmi")
+
+[node name="empresario2" parent="." instance=ExtResource("15_3kg8w")]
+position = Vector2(210, 813)
+
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_d21ai")
 rendering_quadrant_size = 64
@@ -465,9 +474,6 @@ texture = ExtResource("2_f6ptj")
 
 [node name="parallax" parent="." instance=ExtResource("2_4dvvg")]
 position = Vector2(128, -1365)
-
-[node name="player" parent="." instance=ExtResource("3_rnjyy")]
-position = Vector2(9345, 730)
 
 [node name="pinchos" type="Node" parent="."]
 
@@ -568,8 +574,8 @@ position = Vector2(5246, 148)
 rotation = 3.14159
 
 [node name="Area2D30" parent="pinchos" instance=ExtResource("4_4vge2")]
-position = Vector2(8600, 1002)
-scale = Vector2(256.599, 2.77644)
+position = Vector2(5059, 1086)
+scale = Vector2(274.559, 2.77644)
 
 [node name="sillas" type="Node" parent="."]
 

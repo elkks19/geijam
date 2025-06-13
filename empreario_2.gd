@@ -25,7 +25,6 @@ func _physics_process(delta: float) -> void:
 	apply_gravity(delta)
 	handle_jump_mechanics(delta)
 	handle_movement(delta)
-	handle_wall_sliding()
 	
 	move_and_slide()
 	update_animation()
@@ -46,7 +45,7 @@ func handle_jump_mechanics(delta: float) -> void:
 		coyote_time_counter -= delta
 	
 	# Jump buffer
-	if Input.is_action_just_pressed("ui_accept"):
+	if Input.is_action_just_pressed("empresario_jump"):
 		jump_buffer_counter = JUMP_BUFFER
 	else:
 		jump_buffer_counter -= delta
@@ -67,7 +66,7 @@ func handle_jump_mechanics(delta: float) -> void:
 			jump_buffer_counter = 0
 
 func handle_movement(delta: float) -> void:
-	var direction = Input.get_axis("ui_left", "ui_right")
+	var direction = Input.get_axis("empresario_left", "empresario_right")
 	
 	if direction != 0:
 		if is_on_floor():
@@ -80,12 +79,6 @@ func handle_movement(delta: float) -> void:
 		else:
 			velocity.x = move_toward(velocity.x, 0, AIR_RESISTANCE * delta)
 
-func handle_wall_sliding() -> void:
-	if is_on_wall_only() and not is_on_floor() and Input.is_action_pressed("ui_left") or Input.is_action_pressed("ui_right"):
-		is_wall_sliding = true
-		last_wall_normal = get_wall_normal()
-	else:
-		is_wall_sliding = false
 
 func update_animation() -> void:
 	# Aquí puedes agregar lógica para cambiar animaciones según el estado
@@ -104,3 +97,6 @@ func update_animation() -> void:
 	if is_wall_sliding:
 		$AnimatedSprite2D.play("wall_slide")
 		$AnimatedSprite2D.flip_h = last_wall_normal.x > 0
+
+func die():
+	get_tree().call_deferred("reload_current_scene")
