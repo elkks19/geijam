@@ -1,6 +1,6 @@
 [gd_scene load_steps=25 format=3 uid="uid://d12wtp1yasv2u"]
 
-[ext_resource type="Script" uid="uid://d37pg8dg546xy" path="res://scenes/empresarie.gd" id="1_xpv0x"]
+[ext_resource type="Script" path="res://scenes/empresarie.gd" id="1_xpv0x"]
 [ext_resource type="Texture2D" uid="uid://qpgnlsavbqep" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/1-Idle/spritesheet.png" id="2_ndb0h"]
 [ext_resource type="Texture2D" uid="uid://dsp2vqpfkuwo3" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/2-Run/spritesheet.png" id="3_5gsc5"]
 [ext_resource type="Texture2D" uid="uid://bfkqbwhi4we8k" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/4-Jump/spritesheet.png" id="4_jjvle"]
@@ -221,14 +221,14 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_dxgm5"]
 _data = {
-&"RESET": SubResource("Animation_0nqhs"),
-&"attack": SubResource("Animation_a1wf2"),
-&"dead\'hit": SubResource("Animation_uk2en"),
-&"hit": SubResource("Animation_o36ea"),
-&"idle": SubResource("Animation_2npyr"),
-&"jump": SubResource("Animation_8kc2k"),
-&"pick": SubResource("Animation_dxgm5"),
-&"run": SubResource("Animation_gf8gl")
+"RESET": SubResource("Animation_0nqhs"),
+"attack": SubResource("Animation_a1wf2"),
+"dead'hit": SubResource("Animation_uk2en"),
+"hit": SubResource("Animation_o36ea"),
+"idle": SubResource("Animation_2npyr"),
+"jump": SubResource("Animation_8kc2k"),
+"pick": SubResource("Animation_dxgm5"),
+"run": SubResource("Animation_gf8gl")
 }
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_3awjf"]
@@ -302,7 +302,7 @@ frame = 1
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 root_node = NodePath("../Node/idle")
 libraries = {
-&"": SubResource("AnimationLibrary_dxgm5")
+"": SubResource("AnimationLibrary_dxgm5")
 }
 autoplay = "idle"
 

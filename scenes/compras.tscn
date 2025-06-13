@@ -1,0 +1,67 @@
+[gd_scene load_steps=3 format=3 uid="uid://bv188malyomrl"]
+
+[ext_resource type="Script" path="res://scenes/compras.gd" id="1_ei1de"]
+[ext_resource type="Texture2D" uid="uid://d04wp30jgxi4d" path="res://assets/imagenes/Brown and Beige Illustrated Coffee Shop Presentation.png" id="2_883pa"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ei1de")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.361
+anchor_bottom = 1.548
+offset_right = -409.872
+offset_bottom = -345.104
+texture = ExtResource("2_883pa")
+expand_mode = 1
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 951.0
+offset_top = 455.0
+offset_right = 1109.0
+offset_bottom = 498.0
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 951.0
+offset_top = 179.0
+offset_right = 1109.0
+offset_bottom = 222.0
+
+[node name="Button3" type="Button" parent="."]
+offset_left = 608.0
+offset_top = 177.0
+offset_right = 766.0
+offset_bottom = 220.0
+
+[node name="Button4" type="Button" parent="."]
+offset_left = 1216.0
+offset_top = 916.0
+offset_right = 1374.0
+offset_bottom = 959.0
+
+[node name="Button5" type="Button" parent="."]
+offset_left = 611.0
+offset_top = 460.0
+offset_right = 769.0
+offset_bottom = 503.0
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Button5" to="." method="_on_button_5_pressed"]

@@ -1,7 +1,7 @@
 [gd_scene load_steps=92 format=3 uid="uid://dsv3iegmdmso6"]
 
 [ext_resource type="Texture2D" uid="uid://bpbvxmvek3vyx" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/7-Attack/1.png" id="1_sulvi"]
-[ext_resource type="Script" uid="uid://d3wn3vr85rx88" path="res://empreario_2.gd" id="1_wkoct"]
+[ext_resource type="Script" path="res://empreario_2.gd" id="1_wkoct"]
 [ext_resource type="Texture2D" uid="uid://bieho34wwfinx" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/7-Attack/2.png" id="2_wkoct"]
 [ext_resource type="Texture2D" uid="uid://ch4o71cjccdeo" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/7-Attack/3.png" id="3_dyxs1"]
 [ext_resource type="Texture2D" uid="uid://dh7p78a1lvnpc" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/7-Attack/4.png" id="4_lag6x"]
