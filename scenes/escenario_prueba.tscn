@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://b325sgk8kqlbp"]
+[gd_scene load_steps=6 format=3 uid="uid://b325sgk8kqlbp"]
 
 [ext_resource type="PackedScene" uid="uid://bo4ab0k53g88s" path="res://scenes/cholo.tscn" id="1_m81e1"]
+[ext_resource type="Script" uid="uid://rgmq56jj1waq" path="res://scripts/cholo.gd" id="2_amoky"]
 
 [sub_resource type="GDScript" id="GDScript_amoky"]
 script/source = "extends Node2D
@@ -33,4 +34,17 @@ position = Vector2(-0.022333, 0)
 shape = SubResource("RectangleShape2D_tql2w")
 
 [node name="cholo" parent="." instance=ExtResource("1_m81e1")]
-position = Vector2(556, 344)
+position = Vector2(408, 401)
+
+[node name="cholo2" parent="." instance=ExtResource("1_m81e1")]
+position = Vector2(728, 424)
+script = ExtResource("2_amoky")
+
+[node name="DampedSpringJoint2D" type="DampedSpringJoint2D" parent="."]
+node_a = NodePath("../cholo")
+node_b = NodePath("../cholo2")
+bias = 0.1
+length = 6.0
+rest_length = 4.0
+stiffness = 64.0
+damping = 16.0

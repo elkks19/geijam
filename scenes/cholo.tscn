@@ -1,6 +1,5 @@
-[gd_scene load_steps=128 format=3 uid="uid://bo4ab0k53g88s"]
+[gd_scene load_steps=127 format=3 uid="uid://bo4ab0k53g88s"]
 
-[ext_resource type="Script" uid="uid://rgmq56jj1waq" path="res://scripts/cholo.gd" id="1_3oc6t"]
 [ext_resource type="Texture2D" uid="uid://cyny4aoxxqjyp" path="res://assets/sprites/pirate bomb pack/1-Player-Bomb Guy/2-Run/spritesheet.png" id="1_866wx"]
 [ext_resource type="Texture2D" uid="uid://4qc64017qiyw" path="res://assets/sprites/pirate bomb pack/1-Player-Bomb Guy/1-Idle/spritesheet.png" id="2_riisk"]
 [ext_resource type="Texture2D" uid="uid://dlme8xq5ay4tb" path="res://assets/sprites/pirate bomb pack/1-Player-Bomb Guy/4-Jump/spritesheet.png" id="4_3oc6t"]
@@ -843,7 +842,6 @@ animations = [{
 }]
 
 [node name="cholo" type="CharacterBody2D"]
-script = ExtResource("1_3oc6t")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
