@@ -1,410 +1,313 @@
-[gd_scene load_steps=92 format=3 uid="uid://d12wtp1yasv2u"]
+[gd_scene load_steps=25 format=3 uid="uid://d12wtp1yasv2u"]
 
-[ext_resource type="Texture2D" uid="uid://bpbvxmvek3vyx" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/7-Attack/1.png" id="1_sqetc"]
 [ext_resource type="Script" uid="uid://d37pg8dg546xy" path="res://scenes/empresarie.gd" id="1_xpv0x"]
-[ext_resource type="Texture2D" uid="uid://bieho34wwfinx" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/7-Attack/2.png" id="2_xpv0x"]
-[ext_resource type="Texture2D" uid="uid://ch4o71cjccdeo" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/7-Attack/3.png" id="3_285fn"]
-[ext_resource type="Texture2D" uid="uid://dh7p78a1lvnpc" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/7-Attack/4.png" id="4_eth58"]
-[ext_resource type="Texture2D" uid="uid://ci48djty7uc5" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/7-Attack/5.png" id="5_ep5cj"]
-[ext_resource type="Texture2D" uid="uid://drfl3m6o6mqij" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/7-Attack/6.png" id="6_m6xci"]
-[ext_resource type="Texture2D" uid="uid://cwfvnq7orfq4l" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/7-Attack/7.png" id="7_ycgeq"]
-[ext_resource type="Texture2D" uid="uid://cql7p6lbardsa" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/7-Attack/8.png" id="8_1cbkq"]
-[ext_resource type="Texture2D" uid="uid://8w0ewypmaev0" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/7-Attack/9.png" id="9_y1i37"]
-[ext_resource type="Texture2D" uid="uid://ywuupib0x8w6" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/7-Attack/10.png" id="10_v24xb"]
-[ext_resource type="Texture2D" uid="uid://be48evqqkhdel" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/7-Attack/11.png" id="11_ltqql"]
-[ext_resource type="Texture2D" uid="uid://hln8lo5qdmyw" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/14-Dead Ground/1.png" id="12_rh4mr"]
-[ext_resource type="Texture2D" uid="uid://dd3crjc5wdj1n" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/14-Dead Ground/2.png" id="13_3r35l"]
-[ext_resource type="Texture2D" uid="uid://d1ff3snggolwm" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/14-Dead Ground/3.png" id="14_27byr"]
-[ext_resource type="Texture2D" uid="uid://1avgbv802tmh" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/14-Dead Ground/4.png" id="15_2dgb0"]
-[ext_resource type="Texture2D" uid="uid://bt6xqqlfp22u6" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/13-Dead Hit/1.png" id="16_1nnhm"]
-[ext_resource type="Texture2D" uid="uid://diyow47xpjn8k" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/13-Dead Hit/2.png" id="17_f2b0h"]
-[ext_resource type="Texture2D" uid="uid://wp0d8eihq511" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/13-Dead Hit/3.png" id="18_4hams"]
-[ext_resource type="Texture2D" uid="uid://l4o3nwqj0mcq" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/13-Dead Hit/4.png" id="19_wfyq1"]
-[ext_resource type="Texture2D" uid="uid://b1bykklml2wax" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/13-Dead Hit/5.png" id="20_e88yl"]
-[ext_resource type="Texture2D" uid="uid://deb7gdvo8kdxi" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/13-Dead Hit/6.png" id="21_hk885"]
-[ext_resource type="Texture2D" uid="uid://csdrbuwxt8c5d" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/12-Hit/1.png" id="22_udm2g"]
-[ext_resource type="Texture2D" uid="uid://dvt5bdjpdyhx6" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/12-Hit/2.png" id="23_t5bvs"]
-[ext_resource type="Texture2D" uid="uid://b60gf65iq4o7r" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/12-Hit/3.png" id="24_o7jr7"]
-[ext_resource type="Texture2D" uid="uid://bd70076mq5jav" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/12-Hit/4.png" id="25_byqq1"]
-[ext_resource type="Texture2D" uid="uid://kfhq463cdj5p" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/12-Hit/5.png" id="26_t7i8l"]
-[ext_resource type="Texture2D" uid="uid://b4pbo2g1hunai" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/12-Hit/6.png" id="27_ne2jn"]
-[ext_resource type="Texture2D" uid="uid://cjwoebbm6f8bv" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/12-Hit/7.png" id="28_6yoyq"]
-[ext_resource type="Texture2D" uid="uid://poo40qgxoenj" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/12-Hit/8.png" id="29_2fe6g"]
-[ext_resource type="Texture2D" uid="uid://dyyr570e3nkwp" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/1-Idle/1.png" id="30_y2186"]
-[ext_resource type="Texture2D" uid="uid://bhgrnedf6477y" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/1-Idle/2.png" id="31_1q8tb"]
-[ext_resource type="Texture2D" uid="uid://d0f75gsrgl32w" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/1-Idle/3.png" id="32_njpo0"]
-[ext_resource type="Texture2D" uid="uid://840k0k3qe7kn" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/1-Idle/4.png" id="33_scxer"]
-[ext_resource type="Texture2D" uid="uid://pwnnu1wwxd70" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/1-Idle/5.png" id="34_7e45e"]
-[ext_resource type="Texture2D" uid="uid://xi26npb83v7o" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/1-Idle/6.png" id="35_a7y7o"]
-[ext_resource type="Texture2D" uid="uid://bo0j6ch1n36gx" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/1-Idle/7.png" id="36_oceql"]
-[ext_resource type="Texture2D" uid="uid://cy33mv26bct41" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/1-Idle/8.png" id="37_f5w5a"]
-[ext_resource type="Texture2D" uid="uid://bf2jw85mftmd7" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/1-Idle/9.png" id="38_t11wn"]
-[ext_resource type="Texture2D" uid="uid://t06w5i4qip8a" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/1-Idle/10.png" id="39_ixnjb"]
-[ext_resource type="Texture2D" uid="uid://dkl1vy5oskp2x" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/1-Idle/11.png" id="40_r2wom"]
-[ext_resource type="Texture2D" uid="uid://k67g5s2w212v" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/1-Idle/12.png" id="41_wsaom"]
-[ext_resource type="Texture2D" uid="uid://byldv1og7l75s" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/1-Idle/13.png" id="42_8rv55"]
-[ext_resource type="Texture2D" uid="uid://cx1pcgakqtdcd" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/1-Idle/14.png" id="43_kx8pn"]
-[ext_resource type="Texture2D" uid="uid://74pyrke4c5ab" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/1-Idle/15.png" id="44_8vx54"]
-[ext_resource type="Texture2D" uid="uid://qi5kpxos5qp3" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/1-Idle/16.png" id="45_k7603"]
-[ext_resource type="Texture2D" uid="uid://dilocx8d2x1ia" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/1-Idle/17.png" id="46_uchb4"]
-[ext_resource type="Texture2D" uid="uid://ttjsxtntsbl" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/1-Idle/18.png" id="47_vp6iy"]
-[ext_resource type="Texture2D" uid="uid://bdn4jbxxaiapp" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/1-Idle/19.png" id="48_y2l68"]
-[ext_resource type="Texture2D" uid="uid://cmr6tqhwn121h" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/1-Idle/20.png" id="49_amca6"]
-[ext_resource type="Texture2D" uid="uid://cxx75ayn1yhd1" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/1-Idle/21.png" id="50_u1qev"]
-[ext_resource type="Texture2D" uid="uid://ceyyj3mpq1a7c" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/1-Idle/22.png" id="51_k8o5v"]
-[ext_resource type="Texture2D" uid="uid://bi3w1jo1jcv5i" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/1-Idle/23.png" id="52_0r4ny"]
-[ext_resource type="Texture2D" uid="uid://8tcv4cxhvrlp" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/1-Idle/24.png" id="53_e5kk3"]
-[ext_resource type="Texture2D" uid="uid://c01o7y5dnw22b" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/1-Idle/25.png" id="54_qpli8"]
-[ext_resource type="Texture2D" uid="uid://c2nsqs5ssxv3c" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/1-Idle/26.png" id="55_jwkbx"]
-[ext_resource type="Texture2D" uid="uid://bvyx24eseocil" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/1-Idle/27.png" id="56_1p5xk"]
-[ext_resource type="Texture2D" uid="uid://xj8udlvbegll" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/1-Idle/28.png" id="57_bmf2h"]
-[ext_resource type="Texture2D" uid="uid://drns0wtgkh88" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/1-Idle/29.png" id="58_hgcj6"]
-[ext_resource type="Texture2D" uid="uid://6jwx2i24fjhs" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/1-Idle/30.png" id="59_r5jgb"]
-[ext_resource type="Texture2D" uid="uid://dau1a0vekpvpn" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/1-Idle/31.png" id="60_u8rl0"]
-[ext_resource type="Texture2D" uid="uid://uappe22y6rfm" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/1-Idle/32.png" id="61_1agae"]
-[ext_resource type="Texture2D" uid="uid://d0kho67rrtg1w" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/1-Idle/33.png" id="62_ajwuy"]
-[ext_resource type="Texture2D" uid="uid://c2b2qgfy0r72r" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/1-Idle/34.png" id="63_d04w3"]
-[ext_resource type="Texture2D" uid="uid://c1kcnk4rd1n38" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/1-Idle/35.png" id="64_k7lxh"]
-[ext_resource type="Texture2D" uid="uid://cp2k1w5v2u66w" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/1-Idle/36.png" id="65_lojmt"]
-[ext_resource type="Texture2D" uid="uid://2ic6s5lhxhs2" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/1-Idle/37.png" id="66_wxr3v"]
-[ext_resource type="Texture2D" uid="uid://cg8tw3xya327i" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/1-Idle/38.png" id="67_n4fl3"]
-[ext_resource type="Texture2D" uid="uid://crhv2eg18d765" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/3-Jump Anticipation/1.png" id="68_3s075"]
-[ext_resource type="Texture2D" uid="uid://c3muifpi60l35" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/4-Jump/1.png" id="69_m3vw4"]
-[ext_resource type="Texture2D" uid="uid://cxyioyrg5dj0c" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/4-Jump/2.png" id="70_i3hio"]
-[ext_resource type="Texture2D" uid="uid://j7g8empkl7cl" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/4-Jump/3.png" id="71_oiini"]
-[ext_resource type="Texture2D" uid="uid://bkf8k8vu7a2pi" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/4-Jump/4.png" id="72_ybxex"]
-[ext_resource type="Texture2D" uid="uid://7c2uf1nh7yhk" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/2-Run/1.png" id="73_h71pc"]
-[ext_resource type="Texture2D" uid="uid://b3a64uoa0ms4o" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/2-Run/2.png" id="74_wqs8y"]
-[ext_resource type="Texture2D" uid="uid://c2fi178hsveva" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/2-Run/3.png" id="75_woyvu"]
-[ext_resource type="Texture2D" uid="uid://y6wiu353l7y7" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/2-Run/4.png" id="76_vg3je"]
-[ext_resource type="Texture2D" uid="uid://bvvbbjfp1l64o" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/2-Run/5.png" id="77_w2vyg"]
-[ext_resource type="Texture2D" uid="uid://jroudjp35we3" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/2-Run/6.png" id="78_kf3ef"]
-[ext_resource type="Texture2D" uid="uid://dxx8pgodjvy1g" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/2-Run/7.png" id="79_w7rbf"]
-[ext_resource type="Texture2D" uid="uid://da7qkhrp7mfwh" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/2-Run/8.png" id="80_3omax"]
-[ext_resource type="Texture2D" uid="uid://c1660obff0anf" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/2-Run/9.png" id="81_wxyf3"]
-[ext_resource type="Texture2D" uid="uid://dfaxmarntd6ei" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/2-Run/10.png" id="82_og2od"]
-[ext_resource type="Texture2D" uid="uid://dumx6fyvtkkij" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/2-Run/11.png" id="83_mp4lp"]
-[ext_resource type="Texture2D" uid="uid://cf201ebmq106x" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/2-Run/12.png" id="84_bgf6k"]
-[ext_resource type="Texture2D" uid="uid://qvdm4e1oaser" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/2-Run/13.png" id="85_m6rpy"]
-[ext_resource type="Texture2D" uid="uid://b1vqi4tg0ag31" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/2-Run/14.png" id="86_18rfn"]
-[ext_resource type="Texture2D" uid="uid://reewrby0xu4d" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/2-Run/15.png" id="87_41rhc"]
-[ext_resource type="Texture2D" uid="uid://cdt6aqogtcvod" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/2-Run/16.png" id="88_kio5b"]
+[ext_resource type="Texture2D" uid="uid://qpgnlsavbqep" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/1-Idle/spritesheet.png" id="2_ndb0h"]
+[ext_resource type="Texture2D" uid="uid://dsp2vqpfkuwo3" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/2-Run/spritesheet.png" id="3_5gsc5"]
+[ext_resource type="Texture2D" uid="uid://bfkqbwhi4we8k" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/4-Jump/spritesheet.png" id="4_jjvle"]
+[ext_resource type="Texture2D" uid="uid://chh0frd1j12si" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/7-Attack/spritesheet.png" id="5_3awjf"]
+[ext_resource type="Texture2D" uid="uid://cm2o2x1i5h0sy" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/8-Pick (Bomb)/spritesheet.png" id="6_3awjf"]
+[ext_resource type="Texture2D" uid="uid://cskwpkp51k865" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/12-Hit/spritesheet.png" id="7_2npyr"]
+[ext_resource type="Texture2D" uid="uid://bcgbe1181kwag" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/13-Dead Hit/spritesheet.png" id="8_0nqhs"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sqetc"]
-radius = 47.0
-height = 94.0
+radius = 31.0
+height = 72.0
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_amblr"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("1_sqetc")
-}, {
-"duration": 1.0,
-"texture": ExtResource("2_xpv0x")
-}, {
-"duration": 1.0,
-"texture": ExtResource("3_285fn")
-}, {
-"duration": 1.0,
-"texture": ExtResource("4_eth58")
-}, {
-"duration": 1.0,
-"texture": ExtResource("5_ep5cj")
-}, {
-"duration": 1.0,
-"texture": ExtResource("6_m6xci")
-}, {
-"duration": 1.0,
-"texture": ExtResource("7_ycgeq")
-}, {
-"duration": 1.0,
-"texture": ExtResource("8_1cbkq")
-}, {
-"duration": 1.0,
-"texture": ExtResource("9_y1i37")
-}, {
-"duration": 1.0,
-"texture": ExtResource("10_v24xb")
-}, {
-"duration": 1.0,
-"texture": ExtResource("11_ltqql")
-}],
-"loop": true,
-"name": &"attack",
-"speed": 20.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("12_rh4mr")
-}, {
-"duration": 1.0,
-"texture": ExtResource("13_3r35l")
-}, {
-"duration": 1.0,
-"texture": ExtResource("14_27byr")
-}, {
-"duration": 1.0,
-"texture": ExtResource("15_2dgb0")
-}],
-"loop": true,
-"name": &"dead-ground",
-"speed": 20.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("16_1nnhm")
-}, {
-"duration": 1.0,
-"texture": ExtResource("17_f2b0h")
-}, {
-"duration": 1.0,
-"texture": ExtResource("18_4hams")
-}, {
-"duration": 1.0,
-"texture": ExtResource("19_wfyq1")
-}, {
-"duration": 1.0,
-"texture": ExtResource("20_e88yl")
-}, {
-"duration": 1.0,
-"texture": ExtResource("21_hk885")
-}],
-"loop": true,
-"name": &"dead-hit",
-"speed": 20.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("22_udm2g")
-}, {
-"duration": 1.0,
-"texture": ExtResource("23_t5bvs")
-}, {
-"duration": 1.0,
-"texture": ExtResource("24_o7jr7")
-}, {
-"duration": 1.0,
-"texture": ExtResource("25_byqq1")
-}, {
-"duration": 1.0,
-"texture": ExtResource("26_t7i8l")
-}, {
-"duration": 1.0,
-"texture": ExtResource("27_ne2jn")
-}, {
-"duration": 1.0,
-"texture": ExtResource("28_6yoyq")
-}, {
-"duration": 1.0,
-"texture": ExtResource("29_2fe6g")
-}],
-"loop": true,
-"name": &"hit",
-"speed": 20.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("30_y2186")
-}, {
-"duration": 1.0,
-"texture": ExtResource("31_1q8tb")
-}, {
-"duration": 1.0,
-"texture": ExtResource("32_njpo0")
-}, {
-"duration": 1.0,
-"texture": ExtResource("33_scxer")
-}, {
-"duration": 1.0,
-"texture": ExtResource("34_7e45e")
-}, {
-"duration": 1.0,
-"texture": ExtResource("35_a7y7o")
-}, {
-"duration": 1.0,
-"texture": ExtResource("36_oceql")
-}, {
-"duration": 1.0,
-"texture": ExtResource("37_f5w5a")
-}, {
-"duration": 1.0,
-"texture": ExtResource("38_t11wn")
-}, {
-"duration": 1.0,
-"texture": ExtResource("39_ixnjb")
-}, {
-"duration": 1.0,
-"texture": ExtResource("40_r2wom")
-}, {
-"duration": 1.0,
-"texture": ExtResource("41_wsaom")
-}, {
-"duration": 1.0,
-"texture": ExtResource("42_8rv55")
-}, {
-"duration": 1.0,
-"texture": ExtResource("43_kx8pn")
-}, {
-"duration": 1.0,
-"texture": ExtResource("44_8vx54")
-}, {
-"duration": 1.0,
-"texture": ExtResource("45_k7603")
-}, {
-"duration": 1.0,
-"texture": ExtResource("46_uchb4")
-}, {
-"duration": 1.0,
-"texture": ExtResource("47_vp6iy")
-}, {
-"duration": 1.0,
-"texture": ExtResource("48_y2l68")
-}, {
-"duration": 1.0,
-"texture": ExtResource("49_amca6")
-}, {
-"duration": 1.0,
-"texture": ExtResource("50_u1qev")
-}, {
-"duration": 1.0,
-"texture": ExtResource("51_k8o5v")
-}, {
-"duration": 1.0,
-"texture": ExtResource("52_0r4ny")
-}, {
-"duration": 1.0,
-"texture": ExtResource("53_e5kk3")
-}, {
-"duration": 1.0,
-"texture": ExtResource("54_qpli8")
-}, {
-"duration": 1.0,
-"texture": ExtResource("55_jwkbx")
-}, {
-"duration": 1.0,
-"texture": ExtResource("56_1p5xk")
-}, {
-"duration": 1.0,
-"texture": ExtResource("57_bmf2h")
-}, {
-"duration": 1.0,
-"texture": ExtResource("58_hgcj6")
-}, {
-"duration": 1.0,
-"texture": ExtResource("59_r5jgb")
-}, {
-"duration": 1.0,
-"texture": ExtResource("60_u8rl0")
-}, {
-"duration": 1.0,
-"texture": ExtResource("61_1agae")
-}, {
-"duration": 1.0,
-"texture": ExtResource("62_ajwuy")
-}, {
-"duration": 1.0,
-"texture": ExtResource("63_d04w3")
-}, {
-"duration": 1.0,
-"texture": ExtResource("64_k7lxh")
-}, {
-"duration": 1.0,
-"texture": ExtResource("65_lojmt")
-}, {
-"duration": 1.0,
-"texture": ExtResource("66_wxr3v")
-}, {
-"duration": 1.0,
-"texture": ExtResource("67_n4fl3")
-}],
-"loop": true,
-"name": &"idle",
-"speed": 20.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("68_3s075")
-}, {
-"duration": 1.0,
-"texture": ExtResource("69_m3vw4")
-}, {
-"duration": 1.0,
-"texture": ExtResource("70_i3hio")
-}, {
-"duration": 1.0,
-"texture": ExtResource("71_oiini")
-}, {
-"duration": 1.0,
-"texture": ExtResource("72_ybxex")
-}],
-"loop": true,
-"name": &"jump",
-"speed": 20.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("73_h71pc")
-}, {
-"duration": 1.0,
-"texture": ExtResource("74_wqs8y")
-}, {
-"duration": 1.0,
-"texture": ExtResource("75_woyvu")
-}, {
-"duration": 1.0,
-"texture": ExtResource("76_vg3je")
-}, {
-"duration": 1.0,
-"texture": ExtResource("77_w2vyg")
-}, {
-"duration": 1.0,
-"texture": ExtResource("78_kf3ef")
-}, {
-"duration": 1.0,
-"texture": ExtResource("79_w7rbf")
-}, {
-"duration": 1.0,
-"texture": ExtResource("80_3omax")
-}, {
-"duration": 1.0,
-"texture": ExtResource("81_wxyf3")
-}, {
-"duration": 1.0,
-"texture": ExtResource("82_og2od")
-}, {
-"duration": 1.0,
-"texture": ExtResource("83_mp4lp")
-}, {
-"duration": 1.0,
-"texture": ExtResource("84_bgf6k")
-}, {
-"duration": 1.0,
-"texture": ExtResource("85_m6rpy")
-}, {
-"duration": 1.0,
-"texture": ExtResource("86_18rfn")
-}, {
-"duration": 1.0,
-"texture": ExtResource("87_41rhc")
-}, {
-"duration": 1.0,
-"texture": ExtResource("88_kio5b")
-}],
-"loop": true,
-"name": &"run",
-"speed": 20.0
-}]
+[sub_resource type="Animation" id="Animation_0nqhs"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../run:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../jump:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../attack:frame")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("../Pick:frame")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("../hit:frame")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("../dead\'hit:frame")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
 
-[node name="Node2D" type="CharacterBody2D"]
+[sub_resource type="Animation" id="Animation_a1wf2"]
+resource_name = "attack"
+length = 0.45
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../attack:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+}
+
+[sub_resource type="Animation" id="Animation_uk2en"]
+resource_name = "dead'hit"
+length = 0.2
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../dead\'hit:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4]
+}
+
+[sub_resource type="Animation" id="Animation_o36ea"]
+resource_name = "hit"
+length = 0.35
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../hit:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6]
+}
+
+[sub_resource type="Animation" id="Animation_2npyr"]
+resource_name = "idle"
+loop_mode = 1
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 37]
+}
+
+[sub_resource type="Animation" id="Animation_8kc2k"]
+resource_name = "jump"
+length = 0.2
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../jump:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3]
+}
+
+[sub_resource type="Animation" id="Animation_dxgm5"]
+resource_name = "pick"
+length = 0.4
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Pick:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6]
+}
+
+[sub_resource type="Animation" id="Animation_gf8gl"]
+resource_name = "run"
+length = 0.8
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../run:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_dxgm5"]
+_data = {
+&"RESET": SubResource("Animation_0nqhs"),
+&"attack": SubResource("Animation_a1wf2"),
+&"dead\'hit": SubResource("Animation_uk2en"),
+&"hit": SubResource("Animation_o36ea"),
+&"idle": SubResource("Animation_2npyr"),
+&"jump": SubResource("Animation_8kc2k"),
+&"pick": SubResource("Animation_dxgm5"),
+&"run": SubResource("Animation_gf8gl")
+}
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_3awjf"]
+animation = &"idle"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_2npyr"]
+animation = &"run"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_0nqhs"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_gf8gl"]
+advance_mode = 2
+advance_condition = &"run"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_8kc2k"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_a1wf2"]
+states/idle/node = SubResource("AnimationNodeAnimation_3awjf")
+states/idle/position = Vector2(331, 89)
+states/run/node = SubResource("AnimationNodeAnimation_2npyr")
+states/run/position = Vector2(447, 89)
+transitions = ["Start", "idle", SubResource("AnimationNodeStateMachineTransition_0nqhs"), "idle", "run", SubResource("AnimationNodeStateMachineTransition_gf8gl"), "run", "idle", SubResource("AnimationNodeStateMachineTransition_8kc2k")]
+
+[node name="emperesario1" type="CharacterBody2D"]
 script = ExtResource("1_xpv0x")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(225, 68)
+position = Vector2(-4, 4)
 shape = SubResource("CapsuleShape2D_sqetc")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(237, 64)
-scale = Vector2(1.78084, 1.58108)
-sprite_frames = SubResource("SpriteFrames_amblr")
-animation = &"run"
+[node name="Node" type="Node" parent="."]
+
+[node name="idle" type="Sprite2D" parent="Node"]
+texture = ExtResource("2_ndb0h")
+hframes = 38
+frame = 1
+
+[node name="run" type="Sprite2D" parent="Node"]
+texture = ExtResource("3_5gsc5")
+hframes = 16
+frame = 1
+
+[node name="jump" type="Sprite2D" parent="Node"]
+texture = ExtResource("4_jjvle")
+hframes = 4
+frame = 1
+
+[node name="attack" type="Sprite2D" parent="Node"]
+scale = Vector2(1.01429, 1)
+texture = ExtResource("5_3awjf")
+hframes = 11
+frame = 1
+
+[node name="Pick" type="Sprite2D" parent="Node"]
+texture = ExtResource("6_3awjf")
+hframes = 8
+frame = 1
+
+[node name="hit" type="Sprite2D" parent="Node"]
+texture = ExtResource("7_2npyr")
+hframes = 8
+frame = 1
+
+[node name="dead\'hit" type="Sprite2D" parent="Node"]
+texture = ExtResource("8_0nqhs")
+hframes = 6
+frame = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../Node/idle")
+libraries = {
+&"": SubResource("AnimationLibrary_dxgm5")
+}
+autoplay = "idle"
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+root_node = NodePath("../Node/idle")
+tree_root = SubResource("AnimationNodeStateMachine_a1wf2")
+anim_player = NodePath("../AnimationPlayer")
+parameters/conditions/run = false
