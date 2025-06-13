@@ -480,4 +480,3 @@ position = Vector2(2512, 848)
 
 [node name="plataforma" parent="." instance=ExtResource("10_dubn7")]
 position = Vector2(2929, 868)
-point_a = Vector2(200, 0)
