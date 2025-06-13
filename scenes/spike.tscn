@@ -4,16 +4,18 @@
 [ext_resource type="Texture2D" uid="uid://df8ufusiecxch" path="res://assets/sprites/trap_spike_1.png" id="2_d2mqm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cx2lw"]
-size = Vector2(31, 16)
+size = Vector2(66, 24)
 
 [node name="Area2D" type="Area2D"]
 script = ExtResource("1_7a7y0")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-3.8147e-06, 0)
+scale = Vector2(2.125, 1.5)
 texture = ExtResource("2_d2mqm")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-0.5, 8)
+position = Vector2(-1, 12)
 shape = SubResource("RectangleShape2D_cx2lw")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

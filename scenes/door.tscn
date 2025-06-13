@@ -3,12 +3,15 @@
 [ext_resource type="Texture2D" uid="uid://bckynn2nlgquo" path="res://assets/sprites/pirate bomb pack/7-Objects/2-Door/3-Closing/2.png" id="1_hpvv5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uvdjg"]
-size = Vector2(76, 94)
+size = Vector2(91.5, 136.5)
 
 [node name="Door" type="StaticBody2D"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, -1)
 shape = SubResource("RectangleShape2D_uvdjg")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -0.999998)
+scale = Vector2(1.19872, 1.44271)
 texture = ExtResource("1_hpvv5")
