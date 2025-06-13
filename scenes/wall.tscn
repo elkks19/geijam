@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://44hijpb3kr43"]
+
+[ext_resource type="Texture2D" uid="uid://s351m554h8tl" path="res://assets/sprites/pirate bomb pack/7-Objects/2-Door/1-Closed/1.png" id="1_wykyb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2ktk7"]
+size = Vector2(65, 84)
+
+[node name="Wall" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 2)
+shape = SubResource("RectangleShape2D_2ktk7")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_wykyb")
