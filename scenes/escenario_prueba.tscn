@@ -1,28 +1,16 @@
-[gd_scene load_steps=6 format=3 uid="uid://b325sgk8kqlbp"]
+[gd_scene load_steps=7 format=3 uid="uid://b325sgk8kqlbp"]
 
+[ext_resource type="Script" uid="uid://t312d7ci6y8b" path="res://scripts/escenario_prueba.gd" id="1_iamcd"]
 [ext_resource type="PackedScene" uid="uid://bo4ab0k53g88s" path="res://scenes/cholo.tscn" id="1_m81e1"]
 [ext_resource type="Script" uid="uid://rgmq56jj1waq" path="res://scripts/cholo.gd" id="2_amoky"]
-
-[sub_resource type="GDScript" id="GDScript_amoky"]
-script/source = "extends Node2D
-
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
-"
+[ext_resource type="PackedScene" uid="uid://bwi83bix0o7jo" path="res://scenes/dolars.tscn" id="4_dy0a3"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_m81e1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tql2w"]
 
 [node name="Main" type="Node2D"]
-script = SubResource("GDScript_amoky")
+script = ExtResource("1_iamcd")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2(548, 605)
@@ -34,16 +22,19 @@ position = Vector2(-0.022333, 0)
 shape = SubResource("RectangleShape2D_tql2w")
 
 [node name="cholo" parent="." instance=ExtResource("1_m81e1")]
-position = Vector2(406, 398)
+position = Vector2(561, 474)
+script = ExtResource("2_amoky")
 
 [node name="cholo2" parent="." instance=ExtResource("1_m81e1")]
 position = Vector2(406, 452)
-script = ExtResource("2_amoky")
 
-[node name="DampedSpringJoint2D" type="DampedSpringJoint2D" parent="."]
-position = Vector2(406, 403)
-node_a = NodePath("../cholo")
-node_b = NodePath("../cholo2")
-bias = 0.795
-disable_collision = false
-length = 45.0
+[node name="dolares" type="Node" parent="."]
+
+[node name="dolars" parent="dolares" instance=ExtResource("4_dy0a3")]
+position = Vector2(735, 487)
+
+[node name="dolars2" parent="dolares" instance=ExtResource("4_dy0a3")]
+position = Vector2(876, 487)
+
+[node name="dolars3" parent="dolares" instance=ExtResource("4_dy0a3")]
+position = Vector2(177, 487)

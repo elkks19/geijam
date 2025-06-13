@@ -1,9 +1,12 @@
 extends CharacterBody2D
 
+@export var dolares = 0
+
 @onready var animation = $AnimationPlayer
 
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
+
 
 func _physics_process(delta):
 	# Add the gravity.
@@ -23,3 +26,6 @@ func _physics_process(delta):
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
+	
+func tomar_dolar():
+	dolares += 1
