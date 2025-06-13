@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=3 uid="uid://b325sgk8kqlbp"]
+
+[ext_resource type="PackedScene" uid="uid://bo4ab0k53g88s" path="res://scenes/cholo.tscn" id="1_m81e1"]
+
+[sub_resource type="GDScript" id="GDScript_amoky"]
+script/source = "extends Node2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+"
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_m81e1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tql2w"]
+
+[node name="Main" type="Node2D"]
+script = SubResource("GDScript_amoky")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(548, 605)
+scale = Vector2(44.7796, 8.24)
+physics_material_override = SubResource("PhysicsMaterial_m81e1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-0.022333, 0)
+shape = SubResource("RectangleShape2D_tql2w")
+
+[node name="cholo" parent="." instance=ExtResource("1_m81e1")]
+position = Vector2(556, 344)
