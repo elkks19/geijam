@@ -1,0 +1,313 @@
+[gd_scene load_steps=25 format=3 uid="uid://d12wtp1yasv2u"]
+
+[ext_resource type="Script" uid="uid://d37pg8dg546xy" path="res://scenes/empresarie.gd" id="1_xpv0x"]
+[ext_resource type="Texture2D" uid="uid://qpgnlsavbqep" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/1-Idle/spritesheet.png" id="2_ndb0h"]
+[ext_resource type="Texture2D" uid="uid://dsp2vqpfkuwo3" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/2-Run/spritesheet.png" id="3_5gsc5"]
+[ext_resource type="Texture2D" uid="uid://bfkqbwhi4we8k" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/4-Jump/spritesheet.png" id="4_jjvle"]
+[ext_resource type="Texture2D" uid="uid://chh0frd1j12si" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/7-Attack/spritesheet.png" id="5_3awjf"]
+[ext_resource type="Texture2D" uid="uid://cm2o2x1i5h0sy" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/8-Pick (Bomb)/spritesheet.png" id="6_3awjf"]
+[ext_resource type="Texture2D" uid="uid://cskwpkp51k865" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/12-Hit/spritesheet.png" id="7_2npyr"]
+[ext_resource type="Texture2D" uid="uid://bcgbe1181kwag" path="res://assets/sprites/pirate bomb pack/4-Enemy-Big Guy/13-Dead Hit/spritesheet.png" id="8_0nqhs"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sqetc"]
+radius = 31.0
+height = 72.0
+
+[sub_resource type="Animation" id="Animation_0nqhs"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../run:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../jump:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../attack:frame")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("../Pick:frame")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("../hit:frame")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("../dead\'hit:frame")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="Animation" id="Animation_a1wf2"]
+resource_name = "attack"
+length = 0.45
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../attack:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+}
+
+[sub_resource type="Animation" id="Animation_uk2en"]
+resource_name = "dead'hit"
+length = 0.2
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../dead\'hit:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4]
+}
+
+[sub_resource type="Animation" id="Animation_o36ea"]
+resource_name = "hit"
+length = 0.35
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../hit:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6]
+}
+
+[sub_resource type="Animation" id="Animation_2npyr"]
+resource_name = "idle"
+loop_mode = 1
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 37]
+}
+
+[sub_resource type="Animation" id="Animation_8kc2k"]
+resource_name = "jump"
+length = 0.2
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../jump:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3]
+}
+
+[sub_resource type="Animation" id="Animation_dxgm5"]
+resource_name = "pick"
+length = 0.4
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Pick:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6]
+}
+
+[sub_resource type="Animation" id="Animation_gf8gl"]
+resource_name = "run"
+length = 0.8
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../run:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_dxgm5"]
+_data = {
+&"RESET": SubResource("Animation_0nqhs"),
+&"attack": SubResource("Animation_a1wf2"),
+&"dead\'hit": SubResource("Animation_uk2en"),
+&"hit": SubResource("Animation_o36ea"),
+&"idle": SubResource("Animation_2npyr"),
+&"jump": SubResource("Animation_8kc2k"),
+&"pick": SubResource("Animation_dxgm5"),
+&"run": SubResource("Animation_gf8gl")
+}
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_3awjf"]
+animation = &"idle"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_2npyr"]
+animation = &"run"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_0nqhs"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_gf8gl"]
+advance_mode = 2
+advance_condition = &"run"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_8kc2k"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_a1wf2"]
+states/idle/node = SubResource("AnimationNodeAnimation_3awjf")
+states/idle/position = Vector2(331, 89)
+states/run/node = SubResource("AnimationNodeAnimation_2npyr")
+states/run/position = Vector2(447, 89)
+transitions = ["Start", "idle", SubResource("AnimationNodeStateMachineTransition_0nqhs"), "idle", "run", SubResource("AnimationNodeStateMachineTransition_gf8gl"), "run", "idle", SubResource("AnimationNodeStateMachineTransition_8kc2k")]
+
+[node name="emperesario1" type="CharacterBody2D"]
+script = ExtResource("1_xpv0x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-4, 4)
+shape = SubResource("CapsuleShape2D_sqetc")
+
+[node name="Node" type="Node" parent="."]
+
+[node name="idle" type="Sprite2D" parent="Node"]
+texture = ExtResource("2_ndb0h")
+hframes = 38
+frame = 1
+
+[node name="run" type="Sprite2D" parent="Node"]
+texture = ExtResource("3_5gsc5")
+hframes = 16
+frame = 1
+
+[node name="jump" type="Sprite2D" parent="Node"]
+texture = ExtResource("4_jjvle")
+hframes = 4
+frame = 1
+
+[node name="attack" type="Sprite2D" parent="Node"]
+scale = Vector2(1.01429, 1)
+texture = ExtResource("5_3awjf")
+hframes = 11
+frame = 1
+
+[node name="Pick" type="Sprite2D" parent="Node"]
+texture = ExtResource("6_3awjf")
+hframes = 8
+frame = 1
+
+[node name="hit" type="Sprite2D" parent="Node"]
+texture = ExtResource("7_2npyr")
+hframes = 8
+frame = 1
+
+[node name="dead\'hit" type="Sprite2D" parent="Node"]
+texture = ExtResource("8_0nqhs")
+hframes = 6
+frame = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../Node/idle")
+libraries = {
+&"": SubResource("AnimationLibrary_dxgm5")
+}
+autoplay = "idle"
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+root_node = NodePath("../Node/idle")
+tree_root = SubResource("AnimationNodeStateMachine_a1wf2")
+anim_player = NodePath("../AnimationPlayer")
+parameters/conditions/run = false
